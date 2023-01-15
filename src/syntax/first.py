@@ -9,7 +9,7 @@ print(type(name)) # typeで変数の型がわかる。
 # int
 number = 20
 print(number)
-print(type(number)) 
+print(type(number))
 
 # float
 number = 1.5
