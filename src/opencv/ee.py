@@ -17,7 +17,7 @@ src_gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 faces = face_cascade.detectMultiScale(src_gray)
 
 for x, y, w, h in faces:
-    cv2.rectangle(img, (x, y), (x + w, y + h), (255, 0, 0), 2)
+    #　四角を描画しよう
     
 cv2.imshow('binary', img)
 cv2.waitKey(0)
