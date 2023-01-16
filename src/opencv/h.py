@@ -9,6 +9,7 @@ width, height, channel = img.shape
 
 threshold = 120  # しきい値（自分で設定）
 
+# 配列へのアクセスの仕方はimg[x, y, 0],img[x][y][0]で同じ
 # for x in range(width):
 #     for y in range(height):
 #         if img[x, y, 0] > threshold:  # B(RGBのうち)の値がしきい値より大きい場合
