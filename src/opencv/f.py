@@ -1,6 +1,6 @@
 import cv2
 
-img_path = "image//gakky.png"
+img_path = "image//gakky_gen.webp"
 
 img = cv2.imread(img_path)
 
@@ -15,6 +15,7 @@ src_gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 
 #　検出
 faces = face_cascade.detectMultiScale(src_gray)
+print(len(faces))
 
 for x, y, w, h in faces:
     cv2.rectangle(img, (x, y), (x + w, y + h), (255, 0, 0), 2)
